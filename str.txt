@@ -1,0 +1,44 @@
+src/
+├── assets/
+│   └── images/ (add your images here)
+├── components/
+│   ├── Navbar.jsx
+│   └── Footer.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── Courses.jsx
+│   ├── CourseDetails.jsx
+│   ├── Resources.jsx
+│   ├── About.jsx
+│   ├── Contact.jsx
+│   ├── Login.jsx
+│   └── Register.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
+
+ users pages str
+
+ src/
+├── features/
+│   ├── user/
+│   │   ├── pages/
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Profile.jsx
+│   │   │   ├── Courses.jsx
+│   │   │   ├── Certificates.jsx
+│   │   │   ├── Settings.jsx
+│   │   │   └── Payments.jsx
+│   │   ├── components/
+│   │   │   ├── UserNavbar.jsx
+│   │   │   └── UserSidebar.jsx
+│   │   └── layout/
+│   │       └── UserLayout.jsx
+│   ├── courses/
+│   │   ├── pages/
+│   │   └── components/
+│   └── admin/
+│       ├── pages/
+│       └── components/
+├── App.jsx
+└── main.jsx
