@@ -20,6 +20,16 @@ import Certificates from './features/user/pages/Certificates';
 import Settings from './features/user/pages/Settings';
 import Payments from './features/user/pages/Payments';
 
+/// admin routes
+import AdminLayout from './admin/components/AdminLayout';
+import Dashboarda from './admin/pages/Dashboard';
+import CourseList from './admin/pages/Courses';
+import CourseForm from './admin/pages/Courses/CreateEdit';
+import UserList from './admin/pages/Users';
+import UserForm from './admin/pages/Users/CreateEdit';
+import Analytics from './admin/pages/Analytics';
+import Setting from './admin/pages/Settings';
+
 function App() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -43,9 +53,22 @@ function App() {
         <Route path="certificates" element={<Certificates />} />
         <Route path="profile" element={<Profile />} />
         <Route path="payments" element={<Payments />} />
-        <Route path="settings" element={<Settings />} />
+        <Route path="settings" element={<Setting />} />
         <Route index element={<Dashboard />} />
       </Route>
+
+          {/* Admin Routes */}
+           <Route path="/admin" element={<AdminLayout />}>
+          <Route index element={<Dashboarda />} />
+          <Route path="courses" element={<CourseList />} />
+          <Route path="courses/new" element={<CourseForm />} />
+          <Route path="courses/edit/:id" element={<CourseForm />} />
+          <Route path="users" element={<UserList />} />
+          <Route path="users/new" element={<UserForm />} />
+          <Route path="users/edit/:id" element={<UserForm />} />
+          <Route path="analytics" element={<Analytics />} />
+          <Route path="settings" element={<Settings />} />
+        </Route>
         </Routes>
       </main>
       {/* <Footer /> */}

@@ -42,3 +42,21 @@ src/
 │       └── components/
 ├── App.jsx
 └── main.jsx
+
+src/
+  admin/
+    components/
+      AdminLayout.js
+      StatCard.js
+      CourseTable.js
+      UserTable.js
+    pages/
+      Dashboard.js
+      Courses/
+        index.js       (list view)
+        CreateEdit.js  (create/edit form)
+      Users/
+        index.js       (list view)
+        CreateEdit.js  (create/edit form)
+      Analytics.js
+      Settings.js
